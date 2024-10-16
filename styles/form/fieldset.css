@@ -1,0 +1,13 @@
+fieldset {
+  border: none;
+
+
+  >div{
+    margin-top: 1rem;
+  }
+
+
+  & + fieldset {
+    margin-top: 3rem;
+  }
+}

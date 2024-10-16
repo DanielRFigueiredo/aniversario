@@ -1,0 +1,29 @@
+.submit-button {
+
+  height: 3rem;
+  padding-inline: 1.25rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .75rem;
+  margin-left: auto;
+  
+  border: none;
+  border-radius: 8px;
+  background: var(--brand-dark);
+
+  color: var(--text-heading);
+  font: var(--text-md-semi);
+
+  cursor: pointer;
+
+  &:hover{
+    background-color: var(--brand-mid);
+  }
+
+  svg {
+    color: var(--text-heading);
+  }
+
+}

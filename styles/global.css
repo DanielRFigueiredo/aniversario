@@ -69,11 +69,21 @@ h1 {
   font: var(--font-logo);
 }
 
-h2{
+h2 {
   font: var(--title-md);
-
 }
 
-img{
+h3 {
+  font: var(--title-sm)
+}
+
+
+img {
   width: 100%;
+}
+
+svg {
+  width: 24px;
+  height: 24px;
+  color: var(--input-placeholder);
 }

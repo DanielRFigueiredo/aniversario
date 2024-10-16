@@ -1,1 +1,69 @@
 @import url('./legend.css');
+@import url('./fieldset.css');
+@import url('./radio.css');
+@import url('./switch.css');
+@import url('./file.css');
+@import url('./terms.css');
+@import url('./submit-button.css');
+@import url('./error.css');
+
+form {
+  margin-top: 2.5rem;
+}
+
+.input-wrapper,
+.textarea-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: .75rem;
+  font: var(--text-sm);
+  color: var(--text-body);
+}
+
+input {
+  font: var(--text-md);
+
+  width: 100%;
+  height: 3rem;
+
+  border: 1px solid var(--input-stroke);
+  border-radius: .5rem;
+  padding-inline: 1rem;
+
+  background: var(--input-base);
+
+  &::placeholder {
+    color: var(--input-placeholder);
+  }
+}
+
+textarea {
+  height: 8.5rem;
+
+  border: 1px solid var(--input-stroke);
+  border-radius: .5rem;
+  padding: 1rem;
+  background: var(--input-base);
+  font: var(--text-md);
+
+  &::placeholder {
+    color: var(--input-placeholder);
+  }
+}
+
+input:not([type=radio]),
+textarea {
+  color: var(--text-heading);
+
+
+  &:focus {
+    outline: 1px solid var(--brand-light);
+  }
+}
+
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+  display: none;
+}

@@ -1,0 +1,79 @@
+.terms-of-use {
+  margin-block: 3rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--input-stroke);
+
+  div {
+
+    height: 28px;
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    position: relative;
+
+    &+div {
+      margin-top: .25rem;
+    }
+
+    &:has(:checked) {
+      span {
+        border-color: var(--brand-light);
+        svg {
+          display: block;
+        }
+      }
+    }
+
+    &:has(:focus){
+     span{
+      outline: 2px solid var(--brand-mid);
+     }
+
+
+    }
+
+
+    input {
+      height: 20px;
+      width: 20px;
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+    }
+
+    span {
+      height: 20px;
+      width: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+
+      border-radius: .25rem;
+      border: 1px solid var(--input-stroke);
+      background: var(--input-base);
+
+      svg {
+        display: none;
+        color: var(--brand-light);
+      }
+    }
+
+    p {
+      font: var(--text-sm);
+      color: var(--text-body);
+
+      strong {
+        color: var(--brand-light);
+      }
+    }
+
+  }
+
+
+
+
+
+
+
+}

@@ -1,0 +1,55 @@
+.area-drop {
+
+  height: 48px;
+  width: 372px;
+
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  cursor: pointer;
+
+  &:has(:valid){
+    .file-empty{
+      display: none;
+    }
+    .file-filled {
+      display: block;
+    }
+  }
+
+  span {
+    font: var(--text-md);
+    color: var(--input-placeholder);
+  }
+
+  .select-file {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+
+    height: 40px;
+    padding-inline: .75rem;
+    border-radius: .5rem;
+
+    background-color: var(--shape-button);
+
+    svg {
+      color: var(--brand-light);
+    }
+
+    strong {
+      color: var(--text-heading);
+    }
+  }
+
+
+  .file-empty {}
+
+  .file-filled {
+    display: none;
+  }
+
+  input {
+    display: none;
+  }
+}
